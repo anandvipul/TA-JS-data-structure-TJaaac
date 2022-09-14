@@ -29,13 +29,18 @@ color.shift();
 color.pop();
 console.log(color);
 // 15. Remove the second color from the end of list.
-
+delete color[color-length - 2];
 // 16. Write a for loop to iterate through every element in the array and print each element to the console.
-
+for (let col of color) {
+    console.log(col);
+}
 // 17. Copying from that loop you just wrote, modify it to print every color's value and every color's index in this format: 3, purple or 0, blue etc.
-
+for (let i = 0; i < color.length; i++) {
+    console.log(`${color[i]}`);
+}
 // 18. Write a for..of loop to iterate through every element in the array and print each element to the console.
 
 // 19. Create a variable named lastColor that will always point to the last element of the colors array, no matter how many colors are in the list. (Hint: make use of the array's length property for this!)
-
+let lastcolor = color[color.length - 1];
 // 20. Add a new color `tomato` to the index 45. And check the length of the array. Use `console.log` to print.
+color[45] = "tomato";
